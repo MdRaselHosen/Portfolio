@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Md Rasel Hosen</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <header>
+      <nav class="navbar">
+        <div class="logo">Md. Rasel Hosen</div>
+        <div class="menu-icon" id="menu-icon">&#9776;</div>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#home" class="active">About</a></li>
+          <!-- <li><a href="#about">About</a></li> -->
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="section home home-section">
+      <div class="home-container">
+        <div class="home-left">
+          <img src="profile.png" alt="profile image" />
+        </div>
+
+        <div class="home-right">
+          <h1>Hi, I'm <span class="highlight">Md. Rasel Hosen</span></h1>
+          <p><h2 class="typing">I'm a passionate Web Developer and AI Engineer</h2></p>
+          <a href="#projects" class="btn">View My Work</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section
+    <section id="about" class="section about">
+      <h2>About Me</h2>
+      <p>
+        Hello! I'm a web developer who loves building responsive, user-friendly
+        websites and applications. I specialize in front-end development but
+        also enjoy exploring full-stack technologies.
+      </p>
+    </section> -->
+
+    <!-- Education Section -->
+    <section id="education" class="section education">
+      <h2>Education</h2>
+      <div class="edu-item">
+        <h3>B.Sc. in Computer Science</h3>
+        <p>Southeast University — 2022 - Present</p>
+      </div>
+      <div class="edu-item">
+        <h3>HSC in Science</h3>
+        <p>IAKM — 2018 - 2020</p>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML / CSS / Bootstrap</li>
+        <li>Java / Spring boot</li>
+        <li>Python / Django</li>
+        <li>AI / ML</li>
+        <li>Git / GitHub</li>
+      </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+      <h2>Projects</h2>
+      <div class="project-list">
+        <div class="project-card">
+          <h3>Blog Post</h3>
+          <p>A system where everyone can post their blogs.</p>
+          <a href="#" target="_blank">View Project</a>
+        </div>
+        <div class="project-card">
+          <h3>Online News Portal</h3>
+          <p>Online news portal using HTML,CSS and JS</p>
+          <a href="#" target="_blank">View Project</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+      <h2>Contact</h2>
+      <p>Email: raselh280@gmail.com</p>
+      <p>
+        GitHub:
+        <a href="https://github.com/MdRaselHosen">github.com/MdRaselHosen</a>
+      </p>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Md. Rasel Hosen. All rights reserved.</p>
+    </footer>
+
+    <!-- ===== Scroll Spy + Responsive Menu JS ===== -->
+    <script>
+      // --- Scroll Spy ---
+      const sections = document.querySelectorAll("section");
+      const navLinks = document.querySelectorAll(".nav-links a");
+
+      window.addEventListener("scroll", () => {
+        let current = "";
+        sections.forEach((section) => {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.clientHeight;
+          if (pageYOffset >= sectionTop - sectionHeight / 3) {
+            current = section.getAttribute("id");
+          }
+        });
+
+        navLinks.forEach((link) => {
+          link.classList.remove("active");
+          if (link.getAttribute("href") === "#" + current) {
+            link.classList.add("active");
+          }
+        });
+      });
+
+      // --- Responsive Navbar Toggle ---
+      const menuIcon = document.getElementById("menu-icon");
+      const navMenu = document.getElementById("nav-links");
+
+      menuIcon.addEventListener("click", () => {
+        navMenu.classList.toggle("show");
+      });
+
+      // Close menu when clicking a link (mobile)
+      navLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          navMenu.classList.remove("show");
+        });
+      });
+
+      const texts = [
+        "I'm a passionate ",
+        "Web Developer"
+      ];
+      let count = 0;
+      let index = 0;
+      let currentText = "";
+      let letter = "";
+      const typingElement = document.querySelector(".typing");
+
+      function type(){
+        if(count === texts.length){
+          count = 0;
+        }
+        currentText = texts[count];
+        letter = currentText.slice(0, ++index);
+        typingElement.textContent = letter;
+        if(letter.length === currentText.length){
+          count++;
+          index = 0;
+          setTimeout(type, 2000); // Pause before typing next text
+        } else {
+          setTimeout(type, 100); // Typing speed
+        }
+      }
+      function erase(){
+        if(count === texts.length){
+          count = 0;
+        }
+        currentText = texts[count];
+        letter = currentText.slice(0, --index);
+        typingElement.textContent = letter;
+        if(letter.length === 0){
+          count++;
+          index = 0;
+          setTimeout(type, 500); // Pause before typing next text
+        } else {
+          setTimeout(erase, 50); // Erasing speed
+        }
+      }
+      document.addEventListener("DOMContentLoaded", function(){
+        if(typingElement){
+          type();
+        }
+      });
+    </script>
+  </body>
+</html>
