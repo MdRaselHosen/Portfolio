@@ -171,7 +171,8 @@ header {
 #education,
 #skills,
 #projects,
-#contact{
+#contact,
+#achievement{
   text-align:center;
   display:flex;
   flex-direction:column;
@@ -182,7 +183,8 @@ header {
 #education .content,
 #skills .content,
 #projects .content,
-#contact .content{
+#contact .content,
+#achievement .content{
   max-width:800px;
   width: 100%;
   margin:0 auto;
