@@ -7,14 +7,12 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Navigation Bar -->
     <header>
       <nav class="navbar">
         <div class="logo">Md. Rasel Hosen</div>
         <div class="menu-icon" id="menu-icon">&#9776;</div>
         <ul class="nav-links" id="nav-links">
           <li><a href="#home" class="active">About</a></li>
-          <!-- <li><a href="#about">About</a></li> -->
           <li><a href="#education">Education</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#achievement">Achievements</a></li>
@@ -24,7 +22,7 @@
       </nav>
     </header>
 
-    <!-- Home Section -->
+
     <section id="home" class="section home home-section">
       <div class="home-container">
         <div class="home-left">
@@ -33,23 +31,12 @@
 
         <div class="home-right">
           <h1>Hi, I'm <span class="highlight">Md. Rasel Hosen</span></h1>
-          <p><h2 class="typing">I'm a passionate Web Developer and AI Engineer</h2></p>
+          <p><h2 class="typing">I'm a passionate Web Developer and AI/ML Engineer</h2></p>
           <a href="/Users/raselhosen/Portfolio/MdRaselHosen_CV.pdf" download="Md_Rasel_Hosen_CV.pdf" class="btn">Download CV</a>
         </div>
       </div>
     </section>
 
-    <!-- About Section
-    <section id="about" class="section about">
-      <h2>About Me</h2>
-      <p>
-        Hello! I'm a web developer who loves building responsive, user-friendly
-        websites and applications. I specialize in front-end development but
-        also enjoy exploring full-stack technologies.
-      </p>
-    </section> -->
-
-    <!-- Education Section -->
     <section id="education" class="section education">
       <h2>Education</h2>
       <div class="edu-item">
@@ -62,50 +49,56 @@
       </div>
     </section>
 
-    <!-- Skills Section -->
     <section id="skills" class="section skills">
       <h2>Skills</h2>
       <ul>
         <li>Programming Languages: C/C++ / Java / Python</li>
         <li>Frameworks: Django / Django Rest Framework / Spring Boot</li>
-        <li>Frontend: HTML / CSS / Bootstrap</li>
-        <li>AI/ML Libraries: Pandas / Numpy / Matplotlib / Pytorch</li>
-        <li>Git / GitHub / Postman</li>
+        <li>Frontend: HTML / CSS / Bootstrap / React</li>
+        <li>Database: MySQL / PostgresSQL / MongoDB</li>
+        <li>AI/ML Libraries: Pandas / Numpy / Matplotlib / Matplotlib / Pytorch</li>
+        <li>Tools: Git / GitHub / Postman</li>
+        <li>Operating System: Windows / MacOS</li>
+
       </ul>
     </section>
     <section id="achievement" class="section achievement">
       <h2>Achievements</h2>
-      <div class="content">
         <ul>
-          <li>Solved 500+ problem in various sites. <a>Codeforces</a><a>Codechef</a><a>Leetcode</a><a>GeekforGeeks</a></li>
-          <li>Build a Hybrid Deep learning model for retinal image segmentation which got more than 80% dice score</li>
+          <li>Solved 500+ problem in various sites. <a href="https://codeforces.com/profile/Rasel_hosen">Codeforces </a>
+            <a href="https://www.codechef.com/users/raselhosen">Codechef </a>
+            <a href="https://leetcode.com/u/raselh280/">Leetcode </a>
+            <a href="https://www.geeksforgeeks.org/profile/raselh280?tab=activity">GeekforGeeks</a>
+          </li>
         </ul>
-      </div>
     </section>
 
-    <!-- Projects Section -->
     <section id="projects" class="section projects">
       <h2>Projects</h2>
       <div class="project-list">
         <div class="project-card">
           <h3>Blog Post</h3>
           <p>A system where everyone can post their blogs.</p>
-          <a href="#" target="_blank">View Project</a>
+          <a href="https://github.com/MdRaselHosen/BlogPost.git" target="_blank">View Project</a>
         </div>
         <div class="project-card">
           <h3>Online News Portal</h3>
           <p>Online news portal using HTML,CSS and JS</p>
-          <a href="#" target="_blank">View Project</a>
+          <a href="https://github.com/MdRaselHosen/Online-News-Portal.git" target="_blank">View Project</a>
         </div>
         <div class="project-card">
           <h3>Machine Learning Projects</h3>
           <p>Some Machine learning projects using pandas,numpy,matplotlib libraries</p>
-          <a href="#" target="_blank">View Projects</a>
+          <a href="https://github.com/MdRaselHosen?tab=repositories" target="_blank">View Projects</a>
+        </div>
+        <div class="project-card">
+          <br>
+          <br>
+          <a href="https://github.com/MdRaselHosen?tab=repositories" target="_blank">View More Projects</a>
         </div>
       </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact" class="section contact">
       <h2>Contact</h2>
       <p>Email: raselh280@gmail.com</p>
@@ -114,15 +107,18 @@
         GitHub:
         <a href="https://github.com/MdRaselHosen">github.com/MdRaselHosen</a>
       </p>
+      <p>
+        LinkedIn:
+        <a href="https://www.linkedin.com/in/md-rasel-hosen-8171b42b6/">linkedin.com/Md Rasel Hosen</a>
+      </p>
     </section>
 
     <footer>
       <p>&copy; 2025 Md. Rasel Hosen. All rights reserved.</p>
     </footer>
 
-    <!-- ===== Scroll Spy + Responsive Menu JS ===== -->
     <script>
-      // --- Scroll Spy ---
+
       const sections = document.querySelectorAll("section");
       const navLinks = document.querySelectorAll(".nav-links a");
 
@@ -144,7 +140,6 @@
         });
       });
 
-      // --- Responsive Navbar Toggle ---
       const menuIcon = document.getElementById("menu-icon");
       const navMenu = document.getElementById("nav-links");
 
@@ -152,7 +147,6 @@
         navMenu.classList.toggle("show");
       });
 
-      // Close menu when clicking a link (mobile)
       navLinks.forEach((link) => {
         link.addEventListener("click", () => {
           navMenu.classList.remove("show");
@@ -179,9 +173,9 @@
         if(letter.length === currentText.length){
           count++;
           index = 0;
-          setTimeout(type, 2000); // Pause before typing next text
+          setTimeout(type, 2000);
         } else {
-          setTimeout(type, 100); // Typing speed
+          setTimeout(type, 100);
         }
       }
       function erase(){
@@ -194,9 +188,9 @@
         if(letter.length === 0){
           count++;
           index = 0;
-          setTimeout(type, 500); // Pause before typing next text
+          setTimeout(type, 500);
         } else {
-          setTimeout(erase, 50); // Erasing speed
+          setTimeout(erase, 50);
         }
       }
       document.addEventListener("DOMContentLoaded", function(){
