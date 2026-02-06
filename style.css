@@ -239,6 +239,9 @@ header {
   margin: 10px 0;
   font-size: 1.2rem;
 }
+.achievement{
+  background: #f0f8ff;
+}
 .achievement ul {
   list-style: none;
   text-align: center;
@@ -277,7 +280,7 @@ header {
 }
 
 .contact {
-  background: #f1f1f1;
+  background: #f0f8ff;
   text-align: center;
 }
 
@@ -286,7 +289,6 @@ footer {
   color: #fff;
   text-align: center;
   padding: 15px 0;
-  margin-top: 50px;
 }
 
 /* Responsive */

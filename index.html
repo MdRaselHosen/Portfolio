@@ -1,55 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Md Rasel Hosen</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <nav class="navbar">
-        <div class="logo">Md. Rasel Hosen</div>
-        <div class="menu-icon" id="menu-icon">&#9776;</div>
-        <ul class="nav-links" id="nav-links">
-          <li><a href="#home" class="active">About</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#achievement">Achievements</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Md Rasel Hosen</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Md. Rasel Hosen</div>
+      <div class="menu-icon" id="menu-icon">&#9776;</div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="active">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#achievement">Achievements</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
 
-    <section id="home" class="section home home-section">
-      <div class="home-container">
-        <div class="home-left">
-          <img src="profile.png" alt="Project X" loading="lazy">
-        </div>
-
-        <div class="home-right">
-          <h1>Hi, I'm <span class="highlight">Md. Rasel Hosen</span></h1>
-          <p><h2 class="typing">I'm a passionate Web Developer and AI/ML Engineer</h2></p>
-          <a href="MdRaselHosenCV.pdf" download="Md_Rasel_Hosen_CV.pdf" class="btn">Download CV</a>
-        </div>
+  <section id="home" class="section home home-section">
+    <div class="home-container">
+      <div class="home-left">
+        <img src="profile.png" alt="Project X" loading="lazy">
       </div>
-    </section>
 
-    <section id="education" class="section education">
-      <h2>Education</h2>
-      <div class="edu-item">
-        <h3>B.Sc. in Computer Science</h3>
-        <p>Southeast University — 2022 - Present</p>
+      <div class="home-right">
+        <h1>Hi, I'm <span class="highlight">Md. Rasel Hosen</span></h1>
+        <p>
+        <h2 class="typing">I'm a passionate Web Developer and AI/ML Engineer</h2>
+        </p>
+        <a href="MdRaselHosenCV.pdf" download="Md_Rasel_Hosen_CV.pdf" class="btn">Download CV</a>
       </div>
-      <div class="edu-item">
-        <h3>HSC in Science</h3>
-        <p>IAKM — 2018 - 2020</p>
-      </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="skills" class="section skills">
+  <section id="education" class="section education">
+    <h2>Education</h2>
+    <div class="edu-item">
+      <h3>B.Sc. in Computer Science</h3>
+      <p>Southeast University — 2022 - Present</p>
+    </div>
+    <div class="edu-item">
+      <h3>HSC in Science</h3>
+      <p>IAKM — 2018 - 2020</p>
+    </div>
+  </section>
+
+  <!-- <section id="skills" class="section skills">
       <h2>Skills</h2>
       <ul>
         <li>Programming Languages: C/C++ / Java / Python</li>
@@ -61,143 +66,222 @@
         <li>Operating System: Windows / MacOS</li>
 
       </ul>
-    </section>
-    <section id="achievement" class="section achievement">
-      <h2>Achievements</h2>
-        <ul>
-          <li>Solved 500+ problem in various sites. <a href="https://codeforces.com/profile/Rasel_hosen">Codeforces </a>
-            <a href="https://www.codechef.com/users/raselhosen">Codechef </a>
-            <a href="https://leetcode.com/u/raselh280/">Leetcode </a>
-            <a href="https://www.geeksforgeeks.org/profile/raselh280?tab=activity">GeekforGeeks</a>
-          </li>
-        </ul>
-    </section>
+    </section> -->
+  <section id="skills" class="section skills py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Skills</h2>
 
-    <section id="projects" class="section projects">
-      <h2>Projects</h2>
-      <div class="project-list">
-        <div class="project-card">
-          <h3>Blog Post</h3>
-          <p>A system where everyone can post their blogs.</p>
-          <a href="https://github.com/MdRaselHosen/BlogPost.git" target="_blank">View Project</a>
+      <div class="row g-3">
+        <!-- Programming Languages -->
+        <div class="col-md-4 col-sm-6">
+          <div class="card h-100 text-center">
+            <div class="card-body">
+              <h6 class="card-title">Programming Languages</h6>
+              <p class="card-text">C / C++ / Java / Python</p>
+            </div>
+          </div>
         </div>
-        <div class="project-card">
-          <h3>Online News Portal</h3>
-          <p>Online news portal using HTML,CSS and JS</p>
-          <a href="https://github.com/MdRaselHosen/Online-News-Portal.git" target="_blank">View Project</a>
+
+        <!-- Frameworks -->
+        <div class="col-md-4 col-sm-6">
+          <div class="card h-100 text-center">
+            <div class="card-body">
+              <h6 class="card-title">Frameworks</h6>
+              <p class="card-text">Django / DRF / Spring Boot</p>
+            </div>
+          </div>
         </div>
-        <div class="project-card">
-          <h3>Machine Learning Projects</h3>
-          <p>Some Machine learning projects using pandas,numpy,matplotlib libraries</p>
-          <a href="https://github.com/MdRaselHosen?tab=repositories" target="_blank">View Projects</a>
+
+        <!-- Frontend -->
+        <div class="col-md-4 col-sm-6">
+          <div class="card h-100 text-center">
+            <div class="card-body">
+              <h6 class="card-title">Frontend</h6>
+              <p class="card-text">HTML / CSS / Bootstrap / React</p>
+            </div>
+          </div>
         </div>
-        <div class="project-card">
-          <br>
-          <br>
-          <a href="https://github.com/MdRaselHosen?tab=repositories" target="_blank">View More Projects</a>
+
+        <!-- Database -->
+        <div class="col-md-4 col-sm-6">
+          <div class="card h-100 text-center">
+            <div class="card-body">
+              <h6 class="card-title">Database</h6>
+              <p class="card-text">MySQL / PostgreSQL / MongoDB</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- AI/ML -->
+        <div class="col-md-4 col-sm-6">
+          <div class="card h-100 text-center">
+            <div class="card-body">
+              <h6 class="card-title">AI / ML Libraries</h6>
+              <p class="card-text">Pandas / NumPy / Matplotlib / PyTorch</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="col-md-4 col-sm-6">
+          <div class="card h-100 text-center">
+            <div class="card-body">
+              <h6 class="card-title">Tools</h6>
+              <p class="card-text">Git / GitHub / Postman</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- OS -->
+        <div class="col-md-4 col-sm-6 mx-auto">
+          <div class="card h-100 text-center">
+            <div class="card-body">
+              <h6 class="card-title">Operating System</h6>
+              <p class="card-text">Windows / macOS</p>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
+  <section id="achievement" class="section achievement">
+    <h2>Achievements</h2>
+    <ul>
+      <li>Solved 500+ problem in various sites. <a href="https://codeforces.com/profile/Rasel_hosen">Codeforces </a>
+        <a href="https://www.codechef.com/users/raselhosen">Codechef </a>
+        <a href="https://leetcode.com/u/raselh280/">Leetcode </a>
+        <a href="https://www.geeksforgeeks.org/profile/raselh280?tab=activity">GeekforGeeks</a>
+      </li>
+    </ul>
+  </section>
 
-    <section id="contact" class="section contact">
-      <h2>Contact</h2>
-      <p>Email: raselh280@gmail.com</p>
-      <p>Phone: +8801832831262</p>
-      <p>
-        GitHub:
-        <a href="https://github.com/MdRaselHosen">github.com/MdRaselHosen</a>
-      </p>
-      <p>
-        LinkedIn:
-        <a href="https://www.linkedin.com/in/md-rasel-hosen-8171b42b6/">linkedin.com/Md Rasel Hosen</a>
-      </p>
-    </section>
+  <section id="projects" class="section projects">
+    <h2>Projects</h2>
+    <div class="project-list">
+      <div class="project-card">
+        <h3>Blog Post</h3>
+        <p>A system where everyone can post their blogs.</p>
+        <a href="https://github.com/MdRaselHosen/BlogPost.git" target="_blank">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>Online News Portal</h3>
+        <p>Online news portal using HTML,CSS and JS</p>
+        <a href="https://github.com/MdRaselHosen/Online-News-Portal.git" target="_blank">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>Machine Learning Projects</h3>
+        <p>Some Machine learning projects using pandas,numpy,matplotlib libraries</p>
+        <a href="https://github.com/MdRaselHosen?tab=repositories" target="_blank">View Projects</a>
+      </div>
+      <div class="project-card">
+        <br>
+        <br>
+        <a href="https://github.com/MdRaselHosen?tab=repositories" target="_blank">View More Projects</a>
+      </div>
+    </div>
+  </section>
 
-    <footer>
-      <p>&copy; 2025 Md. Rasel Hosen. All rights reserved.</p>
-    </footer>
+  <section id="contact" class="section contact">
+    <h2>Contact</h2>
+    <p>Email: raselh280@gmail.com</p>
+    <p>Phone: +8801832831262</p>
+    <p>
+      GitHub:
+      <a href="https://github.com/MdRaselHosen">github.com/MdRaselHosen</a>
+    </p>
+    <p>
+      LinkedIn:
+      <a href="https://www.linkedin.com/in/md-rasel-hosen-8171b42b6/">linkedin.com/Md Rasel Hosen</a>
+    </p>
+  </section>
 
-    <script>
+  <footer>
+    <p>&copy; 2025 Md. Rasel Hosen. All rights reserved.</p>
+  </footer>
 
-      const sections = document.querySelectorAll("section");
-      const navLinks = document.querySelectorAll(".nav-links a");
+  <script>
 
-      window.addEventListener("scroll", () => {
-        let current = "";
-        sections.forEach((section) => {
-          const sectionTop = section.offsetTop;
-          const sectionHeight = section.clientHeight;
-          if (pageYOffset >= sectionTop - sectionHeight / 3) {
-            current = section.getAttribute("id");
-          }
-        });
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll(".nav-links a");
 
-        navLinks.forEach((link) => {
-          link.classList.remove("active");
-          if (link.getAttribute("href") === "#" + current) {
-            link.classList.add("active");
-          }
-        });
-      });
-
-      const menuIcon = document.getElementById("menu-icon");
-      const navMenu = document.getElementById("nav-links");
-
-      menuIcon.addEventListener("click", () => {
-        navMenu.classList.toggle("show");
+    window.addEventListener("scroll", () => {
+      let current = "";
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (pageYOffset >= sectionTop - sectionHeight / 3) {
+          current = section.getAttribute("id");
+        }
       });
 
       navLinks.forEach((link) => {
-        link.addEventListener("click", () => {
-          navMenu.classList.remove("show");
-        });
-      });
-
-      const texts = [
-        "I'm a passionate ",
-        "Web Developer"
-      ];
-      let count = 0;
-      let index = 0;
-      let currentText = "";
-      let letter = "";
-      const typingElement = document.querySelector(".typing");
-
-      function type(){
-        if(count === texts.length){
-          count = 0;
-        }
-        currentText = texts[count];
-        letter = currentText.slice(0, ++index);
-        typingElement.textContent = letter;
-        if(letter.length === currentText.length){
-          count++;
-          index = 0;
-          setTimeout(type, 2000);
-        } else {
-          setTimeout(type, 100);
-        }
-      }
-      function erase(){
-        if(count === texts.length){
-          count = 0;
-        }
-        currentText = texts[count];
-        letter = currentText.slice(0, --index);
-        typingElement.textContent = letter;
-        if(letter.length === 0){
-          count++;
-          index = 0;
-          setTimeout(type, 500);
-        } else {
-          setTimeout(erase, 50);
-        }
-      }
-      document.addEventListener("DOMContentLoaded", function(){
-        if(typingElement){
-          type();
+        link.classList.remove("active");
+        if (link.getAttribute("href") === "#" + current) {
+          link.classList.add("active");
         }
       });
-    </script>
-  </body>
+    });
+
+    const menuIcon = document.getElementById("menu-icon");
+    const navMenu = document.getElementById("nav-links");
+
+    menuIcon.addEventListener("click", () => {
+      navMenu.classList.toggle("show");
+    });
+
+    navLinks.forEach((link) => {
+      link.addEventListener("click", () => {
+        navMenu.classList.remove("show");
+      });
+    });
+
+    const texts = [
+      "I'm a passionate ",
+      "Web Developer"
+    ];
+    let count = 0;
+    let index = 0;
+    let currentText = "";
+    let letter = "";
+    const typingElement = document.querySelector(".typing");
+
+    function type() {
+      if (count === texts.length) {
+        count = 0;
+      }
+      currentText = texts[count];
+      letter = currentText.slice(0, ++index);
+      typingElement.textContent = letter;
+      if (letter.length === currentText.length) {
+        count++;
+        index = 0;
+        setTimeout(type, 2000);
+      } else {
+        setTimeout(type, 100);
+      }
+    }
+    function erase() {
+      if (count === texts.length) {
+        count = 0;
+      }
+      currentText = texts[count];
+      letter = currentText.slice(0, --index);
+      typingElement.textContent = letter;
+      if (letter.length === 0) {
+        count++;
+        index = 0;
+        setTimeout(type, 500);
+      } else {
+        setTimeout(erase, 50);
+      }
+    }
+    document.addEventListener("DOMContentLoaded", function () {
+      if (typingElement) {
+        type();
+      }
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+
 </html>
