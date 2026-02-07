@@ -1,44 +1,38 @@
----
+# 🌐 Personal Portfolio Website
 
-- **About**
-- **Education**
-- **Skills**
-- **Achievements**
-- **Projects**
-- **Contact**
+This is my personal portfolio website built to showcase my skills, education, projects, and contact information.  
+It is a fully responsive static website created using **HTML, CSS, JavaScript, and Bootstrap**.
 
 ---
 
-## 🔗 Live Preview
+## 👤 About Me
 
-You can deploy this project using:
-- GitHub Pages
-- Netlify
-- Vercel
+Hi, I’m **Md. Rasel Hosen** 👋  
+I am a **passionate Web Developer and AI/ML Engineer** with a strong interest in building scalable web applications and exploring machine learning technologies.
 
 ---
 
-## 📌 Projects Highlighted
+## 🚀 Features
 
-- **Blog Post System** – Django-based blogging platform  
-- **Online News Portal** – Built using HTML, CSS, and JavaScript  
-- **Machine Learning Projects** – Data analysis and ML using Python libraries  
-
----
-
-## 📫 Contact Information
-
-- **Email:** raselh280@gmail.com  
-- **Phone:** +8801832831262  
-- **GitHub:** [MdRaselHosen](https://github.com/MdRaselHosen)  
-- **LinkedIn:** [Md Rasel Hosen](https://www.linkedin.com/in/md-rasel-hosen-8171b42b6/)
+- Responsive navigation bar
+- Smooth scrolling with active section highlighting
+- Typing animation on the homepage
+- Skills displayed in Bootstrap cards
+- Project showcase with GitHub links
+- Downloadable CV
+- Mobile-friendly design
+- Simple and clean UI
 
 ---
 
-## 📄 License
+## 🛠️ Technologies Used
 
-This project is open-source and free to use for learning and personal purposes.
+- **HTML5**
+- **CSS3**
+- **JavaScript (Vanilla JS)**
+- **Bootstrap 5**
+- **Git & GitHub**
 
 ---
 
-⭐ If you like this portfolio, feel free to give it a star!
+## 📂 Project Structure
