@@ -1,18 +1,18 @@
-# 🌐 Personal Portfolio Website
+# Personal Portfolio Website
 
 This is my personal portfolio website built to showcase my skills, education, projects, and contact information.  
 It is a fully responsive static website created using **HTML, CSS, JavaScript, and Bootstrap**.
 
 ---
 
-## 👤 About Me
+##  About Me
 
 Hi, I’m **Md. Rasel Hosen** 👋  
 I am a **passionate Web Developer and AI/ML Engineer** with a strong interest in building scalable web applications and exploring machine learning technologies.
 
 ---
 
-## 🚀 Features
+##  Features
 
 - Responsive navigation bar
 - Smooth scrolling with active section highlighting
@@ -25,7 +25,7 @@ I am a **passionate Web Developer and AI/ML Engineer** with a strong interest in
 
 ---
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 - **HTML5**
 - **CSS3**
@@ -35,4 +35,3 @@ I am a **passionate Web Developer and AI/ML Engineer** with a strong interest in
 
 ---
 
-## 📂 Project Structure
