@@ -7,7 +7,7 @@ It is a fully responsive static website created using **HTML, CSS, JavaScript, a
 
 ##  About Me
 
-Hi, I’m **Md. Rasel Hosen** 👋  
+Hi, I’m **Md. Rasel Hosen** 
 I am a **passionate Web Developer and AI/ML Engineer** with a strong interest in building scalable web applications and exploring machine learning technologies.
 
 ---
